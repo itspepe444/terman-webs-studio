@@ -18,14 +18,14 @@ const ProjectsSection = () => {
         <p className="text-muted-foreground text-lg leading-relaxed mb-10">
           Cada sitio está diseñado con enfoque en resultados, rendimiento y experiencia de usuario.
         </p>
-        <div className="glass rounded-2xl p-8 md:p-10">
-          <p className="font-display text-xl font-semibold text-foreground mb-6">
+        <div className="glass rounded-2xl p-6 sm:p-8 md:p-10">
+          <p className="font-display text-lg sm:text-xl font-semibold text-foreground mb-6">
             ¿Quieres ser de los primeros en tener tu página web profesional?
           </p>
-          <Button variant="hero" size="lg" asChild className="rounded-full px-8 h-12">
+          <Button variant="hero" size="lg" asChild className="rounded-full px-6 sm:px-8 h-12 w-full sm:w-auto">
             <a href="https://wa.me/525541901529" target="_blank" rel="noopener noreferrer">
               <MessageCircle size={20} />
-              Contáctame y comencemos
+              <span className="text-sm sm:text-base">Contáctame y comencemos</span>
             </a>
           </Button>
         </div>

@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { MessageCircle } from "lucide-react";
+import { MessageCircle, Facebook } from "lucide-react";
 
 const ContactSection = () => {
   return (
@@ -13,22 +13,35 @@ const ContactSection = () => {
           Escríbeme y cuéntame sobre tu proyecto. Estoy listo para ayudarte a crear una presencia profesional que genere resultados.
         </p>
 
-        <Button variant="hero" size="lg" asChild className="rounded-full px-8 h-12 mb-8">
+        <Button variant="hero" size="lg" asChild className="rounded-full px-8 h-12 mb-10">
           <a href="https://wa.me/525541901529" target="_blank" rel="noopener noreferrer">
             <MessageCircle size={20} />
             Enviar mensaje por WhatsApp
           </a>
         </Button>
 
-        <div className="flex justify-center gap-6 mt-4">
-          <a
-            href="https://www.facebook.com/termanwebs"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-muted-foreground hover:text-foreground transition-colors text-sm font-medium"
-          >
-            Facebook
-          </a>
+        <div className="flex flex-col items-center gap-4 mt-2">
+          <p className="text-sm text-muted-foreground font-medium">También puedes encontrarme en:</p>
+          <div className="flex items-center gap-6">
+            <a
+              href="https://wa.me/525541901529"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors text-sm font-medium group"
+            >
+              <MessageCircle size={18} className="group-hover:text-primary transition-colors" />
+              WhatsApp
+            </a>
+            <a
+              href="https://www.facebook.com/termanwebs"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors text-sm font-medium group"
+            >
+              <Facebook size={18} className="group-hover:text-primary transition-colors" />
+              Facebook
+            </a>
+          </div>
         </div>
       </div>
     </section>
